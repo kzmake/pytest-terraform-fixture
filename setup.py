@@ -1,5 +1,6 @@
-import os
 import codecs
+import os
+
 from setuptools import setup
 
 
@@ -18,7 +19,7 @@ setup(
     license='MIT',
     url='https://github.com/kzmake/pytest-terraform-fixture',
     description='generate terraform resources to use with pytest',
-    long_description=read('README.rst'),
+    long_description=read('README.md'),
     py_modules=['pytest_terraform_fixture'],
     python_requires='>=3.4',
     install_requires=['pytest>=3.5.0'],
