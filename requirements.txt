@@ -1,0 +1,3 @@
+pyhcl
+pytest
+python-terraform
