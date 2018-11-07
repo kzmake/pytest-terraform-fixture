@@ -1,10 +1,9 @@
 import os
 
 import pytest
-from dotenv import load_dotenv, find_dotenv
+
 from python_terraform import Terraform
 
-load_dotenv(find_dotenv())
 
 ACCESS_KEY = os.environ.get("ACCESS_KEY")
 SECRET_KEY = os.environ.get("SECRET_KEY")
@@ -20,9 +19,10 @@ def terraform(terraform_dir):
         'region': REGION,
         'service': SERVICE
     }
-
+    print(variables)
     return Terraform(working_dir=terraform_dir, variables=variables)
 
 
 def test_terraform_fixture(terraform_dir, instance_a):
     print(terraform_dir, instance_a)
+    assert True
