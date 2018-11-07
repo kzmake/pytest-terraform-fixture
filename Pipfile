@@ -1,0 +1,16 @@
+[dev-packages]
+pytest-terraform-fixture = {path = ".", editable = true}
+pyhcl = "*"
+pytest = "*"
+python-terraform = "*"
+invoke = "*"
+"flake8" = ">=3.3.0,<4"
+isort = "*"
+
+[packages]
+
+[scripts]
+test = "bash run_tests.sh"
+
+[requires]
+python_version = "3"
