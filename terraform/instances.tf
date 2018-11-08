@@ -1,5 +1,5 @@
 resource "nifcloud_instance" "instance_a" {
-  instance_id             = "hogehogea"
+  name                    = "hogehogea"
   image_id                = "${var.image_id["centos67"]}"
   key_name                = "${var.key_name}"
   instance_type           = "${var.instance_type}"
@@ -10,7 +10,7 @@ resource "nifcloud_instance" "instance_a" {
 }
 
 resource "nifcloud_instance" "instance_b" {
-  instance_id             = "hogehogeb"
+  name                    = "hogehogeb"
   image_id                = "${var.image_id["ubuntu1804"]}"
   key_name                = "${var.key_name}"
   instance_type           = "${var.instance_type}"
