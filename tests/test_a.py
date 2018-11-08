@@ -19,7 +19,6 @@ def terraform(terraform_dir):
         'region': REGION,
         'service': SERVICE
     }
-    print(variables)
     return Terraform(working_dir=terraform_dir, variables=variables)
 
 
