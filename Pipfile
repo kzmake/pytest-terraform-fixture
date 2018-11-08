@@ -1,11 +1,13 @@
 [dev-packages]
 pytest-terraform-fixture = {path = ".", editable = true}
 pyhcl = "*"
+dotted = "*"
 pytest = "*"
 python-terraform = "*"
 invoke = "*"
 "flake8" = ">=3.3.0,<4"
 isort = "*"
+v = {version = "*", editable = true}
 
 [packages]
 
@@ -13,4 +15,4 @@ isort = "*"
 test = "bash run_tests.sh"
 
 [requires]
-python_version = "3"
+python_version = "3.6"
