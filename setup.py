@@ -18,7 +18,7 @@ required = [
 
 setup(
     name='pytest-terraform-fixture',
-    version='0.1.0',
+    version='0.1.1',
     author='Kazuki Iwata',
     author_email='kazu.0516.k0n0f@gmail.com',
     maintainer='Kazuki Iwata',

@@ -12,7 +12,7 @@ pytest-terraform-fixture
 github から引っ張ってきて。
 
 ```sh
-pip install git+https://github.com/kzmake/pytest_nifcloud_fixture
+pip install pytest-terraform-fixture
 ```
 
 
