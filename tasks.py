@@ -40,3 +40,9 @@ def release(c):
     clean(c)
     build(c, pypi=True)
     c.run("twine upload dist/*")
+
+
+@task
+def test(c):
+    clean(c)
+    c.run("pipenv run test")
