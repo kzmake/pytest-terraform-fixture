@@ -1,9 +1,11 @@
 import os
 
 import pytest
+
 from python_terraform import Terraform
 
 from pytest_terraform_fixture import NifcloudInstance
+
 
 ACCESS_KEY = os.environ.get("ACCESS_KEY")
 SECRET_KEY = os.environ.get("SECRET_KEY")

@@ -1,10 +1,12 @@
 import glob
 import os
 import re
+
 from collections import defaultdict
 
 import hcl
 import pytest
+
 from dotted.utils import dot
 from python_terraform import Terraform
 
