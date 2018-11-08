@@ -9,6 +9,13 @@ def read(fname):
     return codecs.open(file_path, encoding='utf-8').read()
 
 
+required = [
+    "pytest",
+    "dotted",
+    "python-terraform",
+    "pyhcl"
+]
+
 setup(
     name='pytest-terraform-fixture',
     version='0.1.0',
@@ -22,7 +29,7 @@ setup(
     long_description=read('README.md'),
     py_modules=['pytest_terraform_fixture'],
     python_requires='>=3.4',
-    install_requires=['pytest>=3.5.0'],
+    install_requires=required,
     classifiers=[
         'Development Status :: 4 - Beta',
         'Framework :: Pytest',
