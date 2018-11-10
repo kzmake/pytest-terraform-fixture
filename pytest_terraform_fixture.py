@@ -16,7 +16,7 @@ def pytest_addoption(parser):
                      help='testing environment: active or standby')
 
 
-def pytest_cmdline_preparse(config, args):
+def pytest_load_initial_conftests(early_config, parser, args):
     # TODO: どうにかしたい
     dir = ''
     for arg in args:
