@@ -18,7 +18,7 @@ required = [
 
 setup(
     name='pytest-terraform-fixture',
-    version='0.1.1',
+    version='0.1.2',
     author='Kazuki Iwata',
     author_email='kazu.0516.k0n0f@gmail.com',
     maintainer='Kazuki Iwata',
@@ -46,7 +46,7 @@ setup(
     ],
     entry_points={
         'pytest11': [
-            'resource = pytest_terraform_fixture',
+            'pterraform-fixture = pytest_terraform_fixture',
         ],
     },
 )

@@ -30,7 +30,7 @@ def build(c, docs=False, pypi=False):
     c.run("python setup.py build")
     if pypi:
         c.run("python setup.py sdist")
-        c.run("python setup.py bdist_wheel")
+        c.run("python setup.py bdist_egg")
     if docs:
         c.run("sphinx-build docs docs/_build")
 
